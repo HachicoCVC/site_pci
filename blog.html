@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Блог — AutoLingua</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  
+</head>
+<body>
+  
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="На главную">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>AutoLingua</span>
+    </a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+      ☰ Меню
+    </button>
+
+    <nav class="nav" id="site-nav" data-nav>
+      <a class="nav__link" href="rusification.html">Русификация</a>
+      <a class="nav__link" href="equipment.html">Оборудование и ПО</a>
+      <a class="nav__link" href="cases.html">Кейсы/Отзывы</a>
+      <a class="nav__link" href="blog.html" aria-current="page">Блог</a>
+      <a class="nav__link" href="about.html">О компании</a>
+      <a class="nav__link" href="contacts.html">Контакты</a>
+      <a class="nav__link" href="ui-kit.html">UI Kit</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--secondary" href="contacts.html#form">Заказать консультацию</a>
+    </div>
+  </div>
+</header>
+
+  <main>
+    
+<section class="section" style="padding-top:32px;">
+  <div class="container">
+    <h1 class="h1">Блог</h1>
+    <p class="lead" style="margin-top:10px;">Редакционные заметки и инструкции. Здесь показан вариант набора длинного текста шрифтом Noto Serif.</p>
+    
+  <div class="card" style="margin-top:20px;">
+    <div class="card__body article">
+      <h2 class="h2">Как выбрать пакет русификации</h2>
+      <p style="margin-top:12px;">Для длинного чтения используем <strong>Noto Serif</strong>, а интерфейсные элементы — <strong>Inter</strong>. Это соответствует требованию пары шрифтов: Inter + Noto Serif.</p>
+      <p>В проекте важно соблюдать гайдлайны: понятная иерархия заголовков, контраст, достаточные отступы, доступность форм. Компоненты повторяются на страницах, поэтому удобнее собирать их в UI‑kit и использовать как «организмы» (шапка, футер), «молекулы» (форма поиска) и «атомы» (кнопка).</p>
+    </div>
+  </div>
+
+    <div class="notice" style="margin-top:24px;">
+      <strong>Примечание:</strong> страница добавлена, чтобы соответствовать структуре сайта (Octopus/вайрфрейм) и показать работу навигации.
+    </div>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <div>
+            <p class="footer__title">AutoLingua</p>
+            <p class="small" style="margin:0; max-width:42ch;">Русификация мультимедиа и витрина дилерского ПО/оборудования для китайских автомобилей.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="footer__title">Разделы</p>
+        <ul class="footer__list">
+          <li><a href="rusification.html">Русификация</a></li>
+          <li><a href="equipment.html">Оборудование и ПО</a></li>
+          <li><a href="tariffs.html">Тарифы</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title">Контакты</p>
+        <ul class="footer__list">
+          <li><a href="tel:+79990000000">+7 (999) 000‑00‑00</a></li>
+          <li><a href="mailto:info@autolingua.example">info@autolingua.example</a></li>
+          <li>Москва, Большая Семёновская, 38</li>
+          <li><a href="contacts.html">Написать нам</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2025 AutoLingua</span>
+      <span>Учебный проект · Лабораторная работа по UI</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

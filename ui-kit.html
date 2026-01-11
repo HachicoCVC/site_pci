@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UI Kit — AutoLingua</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  
+</head>
+<body>
+  
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="На главную">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>AutoLingua</span>
+    </a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+      ☰ Меню
+    </button>
+
+    <nav class="nav" id="site-nav" data-nav>
+      <a class="nav__link" href="rusification.html">Русификация</a>
+      <a class="nav__link" href="equipment.html">Оборудование и ПО</a>
+      <a class="nav__link" href="cases.html">Кейсы/Отзывы</a>
+      <a class="nav__link" href="blog.html">Блог</a>
+      <a class="nav__link" href="about.html">О компании</a>
+      <a class="nav__link" href="contacts.html">Контакты</a>
+      <a class="nav__link" href="ui-kit.html" aria-current="page">UI Kit</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--secondary" href="contacts.html#form">Заказать консультацию</a>
+    </div>
+  </div>
+</header>
+
+  <main>
+    
+<div class="grid-overlay" id="gridOverlay"></div>
+
+<section class="section" style="padding-top:32px;">
+  <div class="container">
+    <h1 class="h1">UI Kit / Дизайн‑система (демо)</h1>
+    <p class="lead" style="margin-top:10px;">Палитра, типографика и базовые компоненты (атомы → молекулы → организмы).</p>
+
+    <div class="card card--flat" style="margin-top:20px;">
+      <div class="card__body" style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between;">
+        <div>
+          <p style="margin:0;"><strong>Сетка:</strong> 12 колонок · max 1280px · gap 20px (см. PDF ЛР 7.1.1).</p>
+          <p class="small" style="margin:6px 0 0;">Нажмите кнопку, чтобы включить оверлей сетки поверх страницы.</p>
+        </div>
+        <button class="btn btn--ghost" type="button" id="toggleGrid">Показать сетку</button>
+      </div>
+    </div>
+
+    <h2 class="h2" style="margin-top:32px;">Палитра</h2>
+    <div class="swatches" style="margin-top:14px;">
+      <div class="swatch"><div class="swatch__chip" style="background:#090624;"></div><div class="swatch__meta"><span>Dark</span><span>#090624</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#372689;"></div><div class="swatch__meta"><span>Violet</span><span>#372689</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#684BE2;"></div><div class="swatch__meta"><span>BrightViolet</span><span>#684BE2</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#9C8FFB;"></div><div class="swatch__meta"><span>Lavender</span><span>#9C8FFB</span></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#00C49A;"></div><div class="swatch__meta"><span>Turquoise</span><span>#00C49A</span></div></div>
+    </div>
+
+    <h2 class="h2" style="margin-top:32px;">Типографика</h2>
+    <div class="grid-12" style="margin-top:14px;">
+      <div class="col-6 md-col-12">
+        <div class="card">
+          <div class="card__body">
+            <p class="small" style="margin:0 0 10px;">Inter (кириллица) — основной UI‑шрифт</p>
+            <p class="h1">H1 · Заголовок</p>
+            <p class="h2" style="margin-top:10px;">H2 · Заголовок секции</p>
+            <p class="h3" style="margin-top:10px;">H3 · Заголовок карточки</p>
+            <p style="margin-top:10px;">Body · Основной текст интерфейса. Кнопки и ссылки наследуют Inter.</p>
+            <p class="small" style="margin-top:10px;">Small · Подписи и вторичный текст.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 md-col-12">
+        <div class="card">
+          <div class="card__body article">
+            <p class="small" style="margin:0 0 10px;">Noto Serif — для длинного чтения</p>
+            <h2 class="h2" style="margin:0;">Пример текстового блока</h2>
+            <p style="margin-top:12px;">Для редакционных материалов важны комфортное чтение и спокойный ритм строки. Поэтому для статей используется Noto Serif, а для UI‑компонентов — Inter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="h2" style="margin-top:32px;">Атомы</h2>
+    <div class="grid-12" style="margin-top:14px;">
+      <div class="col-4 md-col-6 sm-col-12">
+        <div class="card">
+          <div class="card__body">
+            <p class="small" style="margin:0 0 10px;">Кнопки</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn" href="#">Primary</a>
+              <a class="btn btn--secondary" href="#">Secondary</a>
+              <a class="btn btn--ghost" href="#">Ghost</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 md-col-6 sm-col-12">
+        <div class="card">
+          <div class="card__body">
+            <p class="small" style="margin:0 0 10px;">Поля ввода</p>
+            <div style="display:grid; gap:10px;">
+              <input class="input" placeholder="Input" />
+              <select class="select"><option>Select</option></select>
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 md-col-12 sm-col-12">
+        <div class="card">
+          <div class="card__body">
+            <p class="small" style="margin:0 0 10px;">Бейджи</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <span class="badge">Default</span>
+              <span class="badge" style="background:rgba(0,196,154,.12); border-color:rgba(0,196,154,.25);">Success</span>
+              <span class="badge" style="background:rgba(156,143,251,.12);">Info</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="h2" style="margin-top:32px;">Молекулы и организмы</h2>
+    <div class="grid-12" style="margin-top:14px;">
+      <div class="col-6 md-col-12">
+        <div class="card">
+          <div class="card__body">
+            <p class="small" style="margin:0 0 10px;">Молекула: фильтры каталога</p>
+            <div class="filters">
+              <div class="filters__group">
+                <button class="pill" type="button">Все</button>
+                <button class="pill" type="button">ПО</button>
+                <button class="pill" type="button">Адаптеры</button>
+              </div>
+              <div class="filters__group" style="min-width:220px;">
+                <select class="select"><option>Сортировка</option></select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 md-col-12">
+        <div class="card">
+          <div class="card__body">
+            <p class="small" style="margin:0 0 10px;">Организм: карточка товара</p>
+            <div class="card">
+              <div class="card__media"><img src="assets/img/hero_adapter.jpg" alt="Товар"></div>
+              <div class="card__body">
+                <span class="badge">Категория</span>
+                <h3 class="h3 card__title">Название товара</h3>
+                <p class="card__text">Короткое описание и кнопка действия.</p>
+                <div class="card__meta">
+                  <span class="small">6 990 ₽</span>
+                  <a class="btn btn--secondary" href="product.html">Открыть</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <h2 class="h2" style="margin-top:32px;">Материалы из PDF</h2>
+    <div class="grid-12" style="margin-top:14px;">
+      <div class="col-6 md-col-12">
+        <div class="card">
+          <div class="card__media"><img src="assets/img/grid_from_pdf.png" alt="Сетка из PDF"></div>
+          <div class="card__body">
+            <p class="small" style="margin:0;">Скрин сетки/гайда из PDF (используется как источник для вёрстки).</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 md-col-12">
+        <div class="card">
+          <div class="card__media"><img src="assets/img/photo_from_pdf.jpeg" alt="Изображение из PDF"></div>
+          <div class="card__body">
+            <p class="small" style="margin:0;">Обработанное изображение из PDF (демо ассета).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="card card--flat" style="margin-top:24px;">
+      <div class="card__body">
+        <p style="margin:0;"><strong>Файлы‑источники</strong> (для отчёта): скрин палитры/типографики и карта сайта — лежат в <code>assets/img/</code>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function(){
+    const btn = document.getElementById('toggleGrid');
+    const overlay = document.getElementById('gridOverlay');
+    if(!btn || !overlay) return;
+    btn.addEventListener('click', function () {
+      overlay.classList.toggle('grid-overlay--on');
+      btn.textContent = overlay.classList.contains('grid-overlay--on') ? 'Скрыть сетку' : 'Показать сетку';
+    });
+  })();
+</script>
+
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <div>
+            <p class="footer__title">AutoLingua</p>
+            <p class="small" style="margin:0; max-width:42ch;">Русификация мультимедиа и витрина дилерского ПО/оборудования для китайских автомобилей.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="footer__title">Разделы</p>
+        <ul class="footer__list">
+          <li><a href="rusification.html">Русификация</a></li>
+          <li><a href="equipment.html">Оборудование и ПО</a></li>
+          <li><a href="tariffs.html">Тарифы</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title">Контакты</p>
+        <ul class="footer__list">
+          <li><a href="tel:+79990000000">+7 (999) 000‑00‑00</a></li>
+          <li><a href="mailto:info@autolingua.example">info@autolingua.example</a></li>
+          <li>Москва, Большая Семёновская, 38</li>
+          <li><a href="contacts.html">Написать нам</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2025 AutoLingua</span>
+      <span>Учебный проект · Лабораторная работа по UI</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

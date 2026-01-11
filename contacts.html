@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты — AutoLingua</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  
+</head>
+<body>
+  
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="На главную">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>AutoLingua</span>
+    </a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+      ☰ Меню
+    </button>
+
+    <nav class="nav" id="site-nav" data-nav>
+      <a class="nav__link" href="rusification.html">Русификация</a>
+      <a class="nav__link" href="equipment.html">Оборудование и ПО</a>
+      <a class="nav__link" href="cases.html">Кейсы/Отзывы</a>
+      <a class="nav__link" href="blog.html">Блог</a>
+      <a class="nav__link" href="about.html">О компании</a>
+      <a class="nav__link" href="contacts.html" aria-current="page">Контакты</a>
+      <a class="nav__link" href="ui-kit.html">UI Kit</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--secondary" href="contacts.html#form">Заказать консультацию</a>
+    </div>
+  </div>
+</header>
+
+  <main>
+    
+<section class="section" style="padding-top:32px;">
+  <div class="container">
+    <h1 class="h1">Контакты</h1>
+    <p class="lead" style="margin-top:10px;">Оставьте заявку — ответим и подберём решение под вашу модель и версию мультимедиа.</p>
+
+    <div class="grid-12" style="margin-top:20px;">
+      <div class="col-6 md-col-12" id="form">
+        <div class="card">
+          <div class="card__body">
+            <h2 class="h2">Форма обратной связи</h2>
+            <form style="margin-top:14px; display:grid; gap:12px;">
+              <div class="grid-12" style="gap:12px;">
+                <div class="col-6 sm-col-12"><input class="input" type="text" placeholder="Имя" required></div>
+                <div class="col-6 sm-col-12"><input class="input" type="tel" placeholder="Телефон" required></div>
+              </div>
+              <input class="input" type="email" placeholder="Email (необязательно)">
+              <select class="select" aria-label="Тема обращения">
+                <option>Тема: Русификация</option>
+                <option>Тема: Оборудование и ПО</option>
+                <option>Тема: Поддержка</option>
+              </select>
+              <textarea class="textarea" placeholder="Опишите модель, год, версию мультимедиа и задачу"></textarea>
+              <button class="btn" type="submit">Отправить</button>
+              <p class="small" style="margin:0;">Нажимая «Отправить», вы соглашаетесь с обработкой данных (учебный проект).</p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 md-col-12">
+        <div class="card">
+          <div class="card__body">
+            <h2 class="h2">Как нас найти</h2>
+            <p style="margin-top:12px;"><strong>Адрес:</strong> Москва, Большая Семёновская, 38</p>
+            <p style="margin:6px 0;"><strong>Телефон:</strong> <a href="tel:+79990000000">+7 (999) 000‑00‑00</a></p>
+            <p style="margin:6px 0;"><strong>Email:</strong> <a href="mailto:info@autolingua.example">info@autolingua.example</a></p>
+
+            <div class="card card--flat" style="margin-top:14px;">
+              <div class="card__body">
+                <p class="small" style="margin:0 0 10px;">Карта (плейсхолдер):</p>
+                <div style="border-radius:14px; overflow:hidden; border:1px solid rgba(55,38,137,.16);">
+                  <iframe title="Карта" width="100%" height="280" style="border:0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=37.697%2C55.78%2C37.71%2C55.788&layer=mapnik"
+                    loading="lazy"></iframe>
+                </div>
+                <div class="hero__cta" style="margin-top:12px;">
+                  <a class="btn btn--ghost" href="route.html">Схема проезда</a>
+                  <a class="btn btn--secondary" href="requisites.html">Реквизиты</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="h2" style="margin-top:32px;">FAQ</h2>
+    <div class="faq" data-accordion style="margin-top:14px;">
+      <div class="faq__item">
+        <button class="faq__btn" type="button">Сколько занимает русификация? <span aria-hidden="true">+</span></button>
+        <div class="faq__content">В среднем 24–48 часов в зависимости от модели, версии ПО и выбранного пакета.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__btn" type="button">Нужна ли запись? <span aria-hidden="true">+</span></button>
+        <div class="faq__content">Да, лучше оставить заявку — мы уточним модель и подготовим пакет локализации.</div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__btn" type="button">Есть ли гарантия? <span aria-hidden="true">+</span></button>
+        <div class="faq__content">В учебном макете — да: подразумевается гарантия на корректность установки и поддержку 7 дней.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <div>
+            <p class="footer__title">AutoLingua</p>
+            <p class="small" style="margin:0; max-width:42ch;">Русификация мультимедиа и витрина дилерского ПО/оборудования для китайских автомобилей.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="footer__title">Разделы</p>
+        <ul class="footer__list">
+          <li><a href="rusification.html">Русификация</a></li>
+          <li><a href="equipment.html">Оборудование и ПО</a></li>
+          <li><a href="tariffs.html">Тарифы</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title">Контакты</p>
+        <ul class="footer__list">
+          <li><a href="tel:+79990000000">+7 (999) 000‑00‑00</a></li>
+          <li><a href="mailto:info@autolingua.example">info@autolingua.example</a></li>
+          <li>Москва, Большая Семёновская, 38</li>
+          <li><a href="contacts.html">Написать нам</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2025 AutoLingua</span>
+      <span>Учебный проект · Лабораторная работа по UI</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

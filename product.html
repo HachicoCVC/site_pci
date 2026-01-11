@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Товар — AutoLingua</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  
+</head>
+<body>
+  
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="На главную">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>AutoLingua</span>
+    </a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+      ☰ Меню
+    </button>
+
+    <nav class="nav" id="site-nav" data-nav>
+      <a class="nav__link" href="rusification.html">Русификация</a>
+      <a class="nav__link" href="equipment.html" aria-current="page">Оборудование и ПО</a>
+      <a class="nav__link" href="cases.html">Кейсы/Отзывы</a>
+      <a class="nav__link" href="blog.html">Блог</a>
+      <a class="nav__link" href="about.html">О компании</a>
+      <a class="nav__link" href="contacts.html">Контакты</a>
+      <a class="nav__link" href="ui-kit.html">UI Kit</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--secondary" href="contacts.html#form">Заказать консультацию</a>
+    </div>
+  </div>
+</header>
+
+  <main>
+
+<section class="section" style="padding-top:32px;">
+  <div class="container">
+    <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div>
+        <p class="small" style="margin:0;"><a href="equipment.html">← Каталог</a></p>
+        <h1 class="h1" style="margin-top:6px;">BlueDriver OBD2</h1>
+        <p class="lead" style="margin-top:10px; max-width:70ch;">Диагностический адаптер для чтения и сброса ошибок, мониторинга параметров и проверки систем автомобиля.</p>
+      </div>
+      <a class="btn btn--secondary" href="contacts.html#form">Заказать</a>
+    </div>
+
+    <div class="grid-12" style="margin-top:20px;">
+      <!-- Левая колонка: изображение -->
+      <div class="col-6 md-col-12">
+        <div class="card">
+          <div class="card__media">
+            <img src="assets/img/hero_adapter.jpg" alt="BlueDriver OBD2">
+          </div>
+          <div class="card__body">
+            <p class="small" style="margin:0;">Изображение взято из обработанного набора (PDF/предыдущая работа).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Правая колонка: описание и характеристики -->
+      <div class="col-6 md-col-12">
+        <div class="card">
+          <div class="card__body">
+            <h2 class="h2" style="margin-top:0;">Описание</h2>
+            <p class="body" style="margin-top:12px;">
+              BlueDriver — удобный OBD2‑адаптер, который помогает быстро получить первичную диагностику и понять,
+              в каком узле может быть проблема. Для учебного проекта данные и описание приведены как пример.
+            </p>
+
+            <div style="height:1px; background:var(--c-border); margin:16px 0;"></div>
+
+            <h3 class="h3" style="margin-top:0;">Характеристики</h3>
+            <ul style="margin:12px 0 0; padding-left:18px; display:grid; gap:8px;">
+              <li>Интерфейс: OBD2</li>
+              <li>Поддержка: базовые блоки/ошибки (пример)</li>
+              <li>Совместимость: Geely / Changan / Zeekr / Voyah (пример)</li>
+              <li>Сценарии: проверка ошибок, мониторинг параметров, подготовка к русификации</li>
+            </ul>
+
+            <div style="height:1px; background:var(--c-border); margin:16px 0;"></div>
+
+            <h3 class="h3" style="margin-top:0;">Что входит</h3>
+            <ul style="margin:12px 0 0; padding-left:18px; display:grid; gap:8px;">
+              <li>Адаптер</li>
+              <li>Инструкция/ссылка на поддержку (учебный пример)</li>
+              <li>Консультация по подключению (через форму)</li>
+            </ul>
+
+            <div class="hero__cta" style="margin-top:18px;">
+              <a class="btn" href="contacts.html#form">Оставить заявку</a>
+              <a class="btn btn--ghost" href="faq.html">Вопросы и ответы</a>
+            </div>
+
+            <p class="small" style="margin-top:14px;">Важно: реальная совместимость зависит от модели и версии ГУ/ПО.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="h2" style="margin-top:32px;">Связанные товары</h2>
+    <div class="grid-12" style="margin-top:20px;">
+      <div class="col-4 md-col-6 sm-col-12">
+        <div class="card">
+          <div class="card__media"><img src="assets/img/hero_multimedia.jpg" alt="Русификация мультимедиа"></div>
+          <div class="card__body">
+            <h3 class="h3" style="margin-top:0;">Русификация мультимедиа</h3>
+            <p class="small" style="margin-top:8px;">Перевод меню, голосовых подсказок и системных разделов.</p>
+            <a class="btn btn--secondary" href="rusification.html" style="margin-top:12px;">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 md-col-6 sm-col-12">
+        <div class="card">
+          <div class="card__media"><img src="assets/img/catalog_software.jpg" alt="Дилерское ПО"></div>
+          <div class="card__body">
+            <h3 class="h3" style="margin-top:0;">Дилерское ПО</h3>
+            <p class="small" style="margin-top:8px;">Подбор, установка и настройка ПО для обслуживания.</p>
+            <a class="btn btn--secondary" href="equipment.html" style="margin-top:12px;">В каталог</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 md-col-6 sm-col-12">
+        <div class="card">
+          <div class="card__media"><img src="assets/img/catalog_maps.jpg" alt="Навигационные карты"></div>
+          <div class="card__body">
+            <h3 class="h3" style="margin-top:0;">Навигационные карты</h3>
+            <p class="small" style="margin-top:8px;">Обновления карт и интеграция навигации.</p>
+            <a class="btn btn--secondary" href="tariffs.html" style="margin-top:12px;">Тарифы</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <div>
+            <p class="footer__title">AutoLingua</p>
+            <p class="small" style="margin:0; max-width:42ch;">Русификация мультимедиа и витрина дилерского ПО/оборудования для китайских автомобилей.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="footer__title">Разделы</p>
+        <ul class="footer__list">
+          <li><a href="rusification.html">Русификация</a></li>
+          <li><a href="equipment.html">Оборудование и ПО</a></li>
+          <li><a href="tariffs.html">Тарифы</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title">Контакты</p>
+        <ul class="footer__list">
+          <li><a href="tel:+79990000000">+7 (999) 000‑00‑00</a></li>
+          <li><a href="mailto:info@autolingua.example">info@autolingua.example</a></li>
+          <li>Москва, Большая Семёновская, 38</li>
+          <li><a href="contacts.html">Написать нам</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2025 AutoLingua</span>
+      <span>Учебный проект · Лабораторная работа по UI</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
